@@ -1,6 +1,16 @@
 cmake_minimum_required(VERSION 3.19)
 project(Min-DevKit)
 
+set(USER_HOME)
+if (NOT USER_HOME)
+    message(FATAL_ERROR "Variable 'USER_HOME' not set or incorrectly set. Rerun the cmake command with '-D USER_HOME=$HOME' appended.")
+endif (NOT USER_HOME)
+
+message(STATUS "USER_HOME set to ${USER_HOME}")
+
+add_subdirectory(deps/bml-dsp)
+# add_subdirectory(${USER_HOME}/Documents/liblsl ${USER_HOME}/Documents/liblsl/build)
+
 enable_testing()
 
 string(REGEX REPLACE "(.*)/" "" THIS_PACKAGE_NAME "${CMAKE_CURRENT_SOURCE_DIR}")

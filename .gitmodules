@@ -4,3 +4,6 @@
 [submodule "source/min-lib"]
 	path = source/min-lib
 	url = https://github.com/Cycling74/min-lib.git
+[submodule "deps/bml-dsp"]
+	path = deps/bml-dsp
+	url = git@github.com:brain-music-lab/bml-dsp.git
