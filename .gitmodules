@@ -4,3 +4,6 @@
 [submodule "deps/bml-dsp"]
 	path = deps/bml-dsp
 	url = git@github.com:brain-music-lab/bml-dsp.git
+[submodule "source/min-api"]
+	path = source/min-api
+	url = git@github.com:Cycling74/min-api.git
